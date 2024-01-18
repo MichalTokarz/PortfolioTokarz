@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header id="Home">
+        <h1 class="port">Portfolio</h1>
+        <p></p>
+        <nav>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#omnie">O mnie</a></li>
+                <li><a href="#hobby">Hobby</a></li>
+                <li><a href="#programming">Języki</a></li>
+                <li><a href="#cert">Certyfikaty</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#social-media">Social Media</a></li>
+            </ul>
+        </nav>
+        <section id="omnie" class="omnie">
+            <h3>Nazywam się Michał Tokarz mam 15 lat uczęszczam do 2 klasy technikum nr. 5 w Toruniu</h3>
+        </section>
+    </header>
+    <section id="hobby" class="hobby">
+        <h3 class="mh">Moimi hobby są:</h3>
+        <h3 class="pro"><img src="img/keyboard.png">   Programowanie</h3>
+        <p class="prog">Nie programuje tylko w szkole. W domu interesuje się programowaniem głównie w wpf chociaż wcześniej próbowałem programowania w C# i C++.
+            Mam nadzieje że kiedyś moje zainteresowania pomogą mi znaleźć pracę i zarabiać pieniądzie.
+        </p>    
+    </section>
+    <section class="hobby2">
+        <h3 class="wedka"><img src="img/wedka.png"> Wędkarstwo</h3>
+        <p class="wedk">Poza programowaniem spędzam też chętnie czas nad wodą wędkując. Pozwala mi się to uspokoić i zrelaksować.</p>
+       </section>
+    <section id="programming">
+        <div class="jez">
+        <h3 class="J">Języki:</h3>
+        <br><p class="JP">Języki Programowania</p><br>
+        <p class="front">Frontend:</p><br>
+        <img class="fr" src="img/HTML.png"><p class="ht">HTML-moje umiejętności na średniozaawansowane</p><br>
+        <img class="fr" src="img/CSS.png"><p class="ht">CSS-moje umiejętności na średniozaawansowane</p><br>
+        <img class="fr" src="img/JS.png"><p class="ht">JS-uważam się za początkującego</p><br>
+        <p class="back">Backend:</p><br>
+        <img class="fr" src="img/C.png"><p class="ht">C#-moje umiejętności na średnie</p><br>
+        <img class="fr" src="img/C++.png"><p class="ht">C++-uważam się za początkującego</p><br>
+        <img class="fr" src="img/Python.png"><p class="ht">Python-moje umiejętności na średniozaawansowane</p><br>
+        <br><p class="JO">Języki Obce</p><br>
+        <img class="fr" src="img/flagawb.jpg"><p class="ht">Język angielski znam na poziomie b2</p><br>
+        <img class="fr" src="img/flgag.png"><p class="ht">Język niemiecki znam na poziomie a1</p><br>
+        </div>
+    </section>
+    <section id="cert" class="cert">
+        <h3 class="J">Moje certyfikaty:</h3><br>
+        <p class="wedk"><img src="img/CertyfikatCisco.png"><br>   Posiadam certyfikat cisco w cyberbezpieczeństwie</p><br>
+    </section>
+    <section id="contact">
+        <div id="form">    
+            <form action="mailto:tokarzmichal2008@gmail.com" method="POST" />
+            <div class="formgroup" id="name-form">
+                <label for="name">Twoje imie i nazwisko</label>
+                <input type="text" id="name" name="name" />
+            </div>
+            
+            <div class="formgroup" id="email-form">
+                <label for="email">Twój e-mail</label>
+                <input type="email" id="email" name="email" />
+            </div>
+            
+            <div class="formgroup" id="message-form">
+                <label for="message">Twoja Wiadomość</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            
+            <input type="submit" value="Wyślij wiadomość!" />
+                </script><br><br>
+    </section>
+    <section id="social-media" class="cert">
+        <h3 class="J"></h3>
+        <a href="https://www.facebook.com/profile.php?id=100059706183609"> <img class="logo" src="img/face.png"></a>
+        <a href="https://www.instagram.com/michal._.tokarz/"><img class="logo" src="img/ig.png"></a>
+        <a href="https://github.com/MichalTokarz?tab=repositories"><img class="logo" src="img/git.png"></a><br><br>
+    </section>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('nav ul li a');
+    var nav = document.querySelector('nav');
+
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            nav.classList.add('scale-nav');
+            var target = this.getAttribute('href');
+            var targetElement = document.querySelector(target);
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+});
+    </script>
+</body>
+</html>

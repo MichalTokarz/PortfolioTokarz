@@ -1,0 +1,333 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #0E0E0E;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+.cert{
+    background-color: #0E0E0E;
+    color: white;
+}
+zsmeie{
+    width: 80;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 1rem;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.port{
+    text-align: center;
+    margin-left: 40%;
+    font-size: 60px;
+    font-weight: 100;
+    width: 20%;
+    color: white;
+}
+
+.hobby, .hobby2 {
+    font-weight: lighter;
+}
+nav a:hover {
+    color: #737373;
+}
+.omnie{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    background-image: url("img/back.png");
+    padding: 200px;
+}
+h3{
+    font-weight: 70;
+    font-size: 30px;
+}
+h2{
+    font-weight: 70;
+}
+.hobby{
+
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 30px;
+    background-color: #737373;
+}
+.wedk{
+    padding-left: 180px;
+}
+.hobby2{
+    padding-top: 20px;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: white;
+background-color: #0E0E0E;
+}
+.jez{
+    margin: 0px;
+    padding: 0px;
+    color: #0E0E0E;
+    background-color: #737373;
+}
+.J{
+    padding-left: 180px;
+    padding-top: 35px;
+}
+.fr{
+    padding-left: 180px;
+}
+.logo{
+    padding-left: 20%;
+}
+.ht{
+    padding-left: 180px;
+    font-size: 20px;
+}
+.JO, .JP{
+    padding-left: 180px;
+    font-size: 25px;
+}
+.front, .back{
+    padding-left: 180px;
+    font-size: 22px;
+    
+}
+.mh{
+    font-size: larger;
+}
+.pro{
+    text-align: left;
+    margin-left: 170px;
+}
+.wedka{
+    text-align: left;
+    margin-left: 170px;
+    padding-top: 25px;
+}
+.prog{
+    width: 70%;
+    text-align: left;
+    margin-left: 165px;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #737373;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #0E0E0E(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+/* show dropdown when hovering over main menu items */
+nav ul li:hover > ul,
+nav ul li:focus-within > ul,
+nav ul li:focus > ul {
+    display: block;
+}
+
+/* for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    /* display dropdown items on separate lines */
+    nav ul ul li {
+        width: 100%;
+    }
+
+    /* style the hamburger menu */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #737373;
+        margin: 4px 0;
+        transition: all 0.3s ease;
+    }
+
+    /* show the menu when the hamburger menu is clicked */
+    .hamburger:focus + ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.Container {
+    width: 90%;
+    min-width: 500px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .Container {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* Animation webkit */
+@-webkit-keyframes myfirst
+{
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+/* Animation */
+@keyframes myfirst
+{
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+
+#fish{
+	top: 120px;
+}
+
+#fish2{
+	top: 260px;
+	animation-delay: 12s;
+	-webkit-animation-delay: 12s;
+}
+
+
+
+#form{
+	height: 100%;	
+	background-color: #737373;
+	overflow: hidden;
+	position: relative;
+	
+}
+form{
+	margin: 0 auto;
+	width: 500px;
+	padding-top: 40px;
+	color: black;
+	position: relative;
+	
+	
+}
+label, input, textarea{
+	display: block;	
+}
+input, textarea{
+	width: 500px;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	font-size: 1em;
+	color: #676767;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #737373;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+}
+input:focus, textarea:focus{
+	border: solid 3px #0E0E0E;	
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+	overflow: auto;
+}
+input[type="submit"]{
+	background-color: #0E0E0E;
+	color: #737373;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1.29em;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+input[type="submit"]:hover{
+	background-color: #737373;
+    color: #0E0E0E;
+	
+}
+label{
+	font-size: 1.5em;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.formgroup, .formgroup-active, .formgroup-error{
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 10.5%;
+	transition: background-image 0.7s;
+	-webkit-transition: background-image 0.7s;
+	-moz-transition: background-image 0.7s;
+	-o-transition: background-image 0.7s;
+	width: 566px;
+	padding-top: 2px;
+}
+
+.formgroup{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');	
+}
+.formgroup-active{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
+}
+.formgroup-error{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
+	color: red;
+}
